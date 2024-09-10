@@ -1,0 +1,25 @@
+{
+    "name": "softc/shiny-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kovács Zoltán",
+            "email": "kovacs.zoltan@softc.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\Modules\\ShinyModule": "App/Modules/ShinyModule/"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "App\\Modules\\ShinyModule\\Providers\\ModuleServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
