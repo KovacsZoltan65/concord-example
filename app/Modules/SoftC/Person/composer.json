@@ -1,0 +1,25 @@
+{
+	"name": "softc/person",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Kovács Zoltán",
+			"email": "kovacs.zoltan@softc.hu"
+		}
+	],
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"SoftC\\Person\\": "src/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"SoftC\\Person\\Providers\\PersonServiceProvider"
+			],
+			"aliases": {}
+		}
+	},
+	"minimum-stability": "dev"
+}
