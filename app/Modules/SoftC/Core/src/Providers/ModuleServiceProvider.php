@@ -4,5 +4,7 @@ namespace SoftC\Core\Providers;
 
 class ModuleServiceProvider extends BaseModuleServiceProvider
 {
-    protected $models = [];
+    protected $models = [
+        \SoftC\Core\Models\CoreConfig::class,
+    ];
 }

@@ -1,15 +1,18 @@
 <?php
 
-namespace SoftC\Person\Providers;
-use Illuminate\Routing\RouteRegistrar;
+namespace Softc\Person\Providers;
+
+use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 
 class PersonServiceProvider extends ServiceProvider
 {
-    public function boot(RouteRegistrar $router)
+    //
+    public function boot(Router $router): void
     {
-        $this->loadMigrationsFrom(__DIR__.'/../Database/Migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
     }
 
     public function register() {}
+    
 }

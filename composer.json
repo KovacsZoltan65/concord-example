@@ -8,7 +8,8 @@
         "php": "^8.2",
         "konekt/concord": "^1.15",
         "laravel/framework": "^11.9",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "prettus/l5-repository": "^2.9"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -22,7 +23,10 @@
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
+            "Database\\Seeders\\": "database/seeders/",
+            "SoftC\\Core\\": "app/Modules/SoftC/Core/src/",
+            "SoftC\\Person\\": "app/Modules/SoftC/Person/src/",
+            "SoftC\\Admin\\": "app/Modules/SoftC/Admin/src/"
         }
     },
     "autoload-dev": {

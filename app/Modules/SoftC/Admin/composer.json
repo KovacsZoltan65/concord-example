@@ -1,26 +1,26 @@
 {
-    "name": "softc/core",
+    "name": "softc/admin",
     "license": "MIT",
     "authors": [
         {
             "name": "Kovács Zoltán",
             "email": "kovacs.zoltan@softc.com"
-        }    
+        }
     ],
     "require": {},
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "SoftC\\Person\\": "app/Modules/SoftC/Person/src/"
+            "SoftC\\Admin\\": "app/Modules/SoftC/Admin/src/"
         }
     },
+    "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
-                "SoftC\\Person\\Providers\\ModuleServiceProvider"
+                "SoftC\\Admin\\Providers\\ModuleServiceProvider"
             ],
             "aliases": {}
         }
-    },
-    "minimum-stability": "dev"
+    }
 }

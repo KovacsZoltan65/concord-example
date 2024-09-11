@@ -80,6 +80,21 @@ return [
 
     'locale' => env('APP_LOCALE', 'en'),
 
+    /*
+    |--------------------------------------------------------------------------
+    | Available Locales Configuration
+    |--------------------------------------------------------------------------
+    |
+    | The application available locale determines the supported locales
+    | by application
+    |
+     */
+
+    'available_locales' => [
+        'en' => 'English',
+        'hu' => 'Hungarian',
+    ],
+    
     'fallback_locale' => env('APP_FALLBACK_LOCALE', 'en'),
 
     'faker_locale' => env('APP_FAKER_LOCALE', 'en_US'),

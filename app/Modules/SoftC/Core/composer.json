@@ -11,13 +11,13 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "SoftC\\Person\\": "app/Modules/SoftC/Person/src/"
+            "SoftC\\Core\\": "app/Modules/SoftC/Core/src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "SoftC\\Person\\Providers\\ModuleServiceProvider"
+                "SoftC\\Core\\Providers\\ModuleServiceProvider"
             ],
             "aliases": {}
         }

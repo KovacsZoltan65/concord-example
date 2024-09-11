@@ -6,28 +6,24 @@ use Konekt\Concord\BaseModuleServiceProvider as ConcordBaseModuleServiceProvider
 
 class BaseModuleServiceProvider extends ConcordBaseModuleServiceProvider
 {
-    public function boot()
+    public function boot(): void
     {
-        if ($this->areMigrationsEnabled()) {
-            //$this->registerMigrations();
-            \Log::info('Register Migrations');
+        if( $this->areMigrationsEnabled() ){
+            $this->registerMigrations();
         }
-
-        if ($this->areModelsEnabled()) {
-            //$this->registerModels();
-            //$this->registerEnums();
-            //$this->registerRequestTypes();
-            \Log::info('Register Models, Enums, RequestTypes');
+        
+        if( $this->areModelsEnabled() ){
+            $this->registerModels();
+            $this->registerEnums();
+            $this->registerRequestTypes();
         }
-
-        if ($this->areViewsEnabled()) {
-            //$this->registerViews();
-            \Log::info('Register Views');
+        
+        if( $this->areViewsEnabled() ){
+            $this->registerViews();
         }
-
-        if ($routes = $this->config('routes', true)) {
-            //$this->registerRoutes($routes);
-            \Log::info('Register Routes');
+        
+        if( $routes = $this->config('routes', true) ){
+            $this->registerRoutes($routes);
         }
     }
 }
