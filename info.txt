@@ -1,2 +1,18 @@
-https://github.com/krayin/laravel-crm
-https://konekt.dev/concord/1.x/prologue
+https://konekt.dev/concord/1.x/creating-modules
+https://github.com/artkonekt/concord
+https://packagist.org/packages/konekt/concord
+https://github.com/KovacsZoltan65/concord-example
+
+composer create-project --prefer-dist laravel/laravel concord-example
+
+composer require konekt/concord
+
+php artisan vendor:publish --provider="Konekt\Concord\ConcordServiceProvider" --tag=config
+php artisan vendor:publish --provider="Vendor\Module\Providers\ModuleServiceProvider" --tag="migrations"
+
+php artisan make:module ShinyModule
+
+php artisan concord:modules
+
+
+http://localhost:8000/shiny
